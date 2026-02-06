@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman-App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    
+  </head>
+  <body>
+    <div class="warning-message">You have already entered this letter!</div>
+    <div class="lost-message">
+      <h1 class="lost-text"></h1>
+      <button class="play-again-btn">Play Again!</button>
+    </div>
+    <main class="card">
+      <div class="title-div">
+        <h1>Hangman Game</h1>
+        <p>Try to Guess the Word!</p>
+      </div>
+      <div class="wrong-letters-div">
+        <h1>Wrong Letters</h1>
+        <h2 class="wrong-letters"></h2>
+      </div>
+      <div class="guess-div">
+        <div class="image-div">
+          <img src="images/hangman.jpg" alt="" />
+          <div class="white-div one"></div>
+          <div class="white-div two"></div>
+          <div class="white-div three"></div>
+          <div class="white-div four"></div>
+          <div class="white-div five"></div>
+          <div class="white-div six"></div>
+        </div>
+        <div class="letters-div">
+          <p class="letters first">A</p>
+          <p class="letters second">A</p>
+          <p class="letters third">A</p>
+          <p class="letters fourth">A</p>
+          <p class="letters fifth">A</p>
+          <p class="letters sixth">A</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

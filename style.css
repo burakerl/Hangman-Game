@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(100, 128, 189);
+}
+.card {
+  background-color: white;
+  min-height: 70%;
+  height: fit-content;
+  min-width: 50%;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  border: none;
+  border-radius: 15px;
+  position: absolute;
+  box-shadow: 5px 5px 20px 5px ;
+  
+}
+.title-div {
+  text-align: center;
+}
+.title-div h1 {
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+.title-div p {
+  font-size: 25px;
+}
+.wrong-letters-div {
+  width: 100%;
+  text-align: end;
+}
+.wrong-letters-div h1 {
+  text-decoration: underline;
+  font-size: 25px;
+}
+.wrong-letters-div h2 {
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.guess-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+.letters-div {
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  height: 10%;
+  width: 55%;
+  gap: 15px;
+}
+.letters {
+  text-align: center;
+  border-bottom: 5px solid blue;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.image-div {
+  position: relative;
+}
+img {
+  width: 200px;
+  
+}
+.white-div {
+  z-index: 1;
+  position: absolute;
+}
+.white-div.one {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  bottom: 175px;
+  left: 130px;
+  background-color: white
+}
+.white-div.two {
+  height: 72px;
+  width: 10px;
+  bottom: 105px;
+  left: 148px;
+  background-color: white
+}
+.white-div.three {
+  height: 44px;
+  width: 40px;
+  bottom: 125px;
+  left: 158px;
+  background-color: white
+}
+.white-div.four {
+  height: 44px;
+  width: 40px;
+  bottom: 125px;
+  left: 110px;
+  background-color: white
+}
+.white-div.five {
+  height: 36px;
+  width: 52px;
+  bottom: 70px;
+  left: 148px;
+  rotate: 31deg;
+  background-color: white
+}
+.white-div.six {
+  height: 37px;
+  width: 52px;
+  bottom: 69px;
+  left: 108px;
+  rotate: -31deg;
+  background-color: white
+}
+
+.warning-message {
+  position: absolute;
+  top: 5px;
+  background-color: lightgreen;
+  padding: 40px;
+  border: none;
+  border-radius: 15px;
+  display: none;
+  z-index: 1;
+  font-size: 25px;
+}
+.lost-message {
+  position: absolute;
+  z-index: 3;
+  text-align: center;
+  background-color: red;
+  padding: 40px;
+  width: 30%;
+  height: 20%;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  display: none;
+  height: fit-content;
+  
+}
+.play-again-btn {
+  padding: 15px;
+  margin: 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(53, 43, 43);
+  color: white;
+}
