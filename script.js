@@ -26,6 +26,7 @@ async function getWord() {
 
 async function startGame() {
   word = await getWord();
+  console.log(word);
   document.body.addEventListener("keypress", (event) => {
     playerInput = event.key;
     checkLetters();
